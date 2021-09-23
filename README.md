@@ -1,24 +1,21 @@
-# README
+# Rails API App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+- `rails new rails-api-only -T --api`
 
-* Ruby version
+  - to setup postgres db instead of default sqlite3:
+    - `rails new rails-api-only -T --api -d postgresql`
 
-* System dependencies
+- add to Gemfile:
 
-* Configuration
+```ruby
+group :development, :test do
+  gem 'rspec-rails', '~> 5.0.0'
+  gem 'factory_bot_rails'
+end
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- then
+  - `bundle install`
+  - `rails generate rspec:install`
