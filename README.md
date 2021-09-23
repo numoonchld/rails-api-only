@@ -24,3 +24,8 @@ end
 
 - `rails generate model Article title:string content:text`
 - `rails db:migrate`
+
+## Testing
+
+- `rspec spec/models/article_spec.rb`
+- detailed `rspec` results: `rspec --format=documentation`
