@@ -19,3 +19,8 @@ end
 - then
   - `bundle install`
   - `rails generate rspec:install`
+
+## Generate Article Model
+
+- `rails generate model Article title:string content:text`
+- `rails db:migrate`
