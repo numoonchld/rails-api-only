@@ -21,14 +21,25 @@ RSpec.describe Article, type: :model do
     it 'tests that factory is valid' do
       # article = create(:article)
       expect(article).to be_valid
+      article.save!
+      another_article = build(:article)
+      another_article.to be_valid
     end
   
     it 'has an invalid title' do 
       # article = build :article, title: ''
+      article.title = ''
       expect(article).not_to be_valid
       expect(article.errors[:title]).to include("can't be blank")
     end
-    
+
+    pending 'has invalid content'
+    pending 'has an invalid slug'
+    pending 'validates the uniqueness of the slug'
+
+
+
+
   end
 
 
