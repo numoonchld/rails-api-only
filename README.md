@@ -41,3 +41,7 @@ end
 
 - add `gem 'jsonapi-serializer'` in `Gemfile`
 - then run `bundle` in CLI project root directory
+
+### Generate serializer
+
+- `rails generate serializer article title content slug`
