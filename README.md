@@ -36,3 +36,8 @@ end
 - routes filter
   - `rails routes | grep articles` or `rails routes -g articles`
   - `rails routes | grep -v rails`
+
+## Install Serializer Gem - JSON API Serializer
+
+- add `gem 'jsonapi-serializer'` in `Gemfile`
+- then run `bundle` in CLI project root directory
