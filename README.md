@@ -29,3 +29,10 @@ end
 
 - `rspec spec/models/article_spec.rb`
 - detailed `rspec` results: `rspec --format=documentation`
+
+## Inspecting Routes
+
+- `rails routes`
+- routes filter
+  - `rails routes | grep articles` or `rails routes -g articles`
+  - `rails routes | grep -v rails`
