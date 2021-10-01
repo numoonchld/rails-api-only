@@ -22,8 +22,8 @@ module Paginable
       meta: paginated.meta.to_h, 
       links: paginated.links.to_h
     }
-    result = json: serializer.new(paginated.items, options)
-    render result, status: :ok
+    result = serializer.new(paginated.items, options)
+    render json: result, status: :ok
   end
 
 end
