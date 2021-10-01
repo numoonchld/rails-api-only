@@ -14,7 +14,7 @@ module Paginable
   end
 
   def pagination_params
-    params.permit![:page]
+    params.permit[:page]
   end
 
   def render_collection(paginated)

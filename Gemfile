@@ -28,6 +28,10 @@ gem 'jsonapi-serializer'
 # JSOM Pagination
 gem 'jsom-pagination'
 
+# JSON API Erros Handler
+gem 'jsonapi_errors_handler'
+
+
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
