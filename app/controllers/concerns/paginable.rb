@@ -1,6 +1,14 @@
 module Paginable 
   extend ActiveSupport::Concern
 
+  def paginate(collection)
+    paginated = paginator.call(
+      collection,
+      params: pagination_params,
+      base_url: request.url
+    )
+  end
+
   def paginator
     JSOM::Pagination::Paginator.new
   end
